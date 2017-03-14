@@ -86,15 +86,16 @@ void GetAllSubPath(string path, vector<string>& files)
 
 void main()
 {
-	char * filePath = "E:/reg/data";
+	char * filePath = "E:/reg/虹膜采集图像整理";
 	vector<string> path,files;
 	//获取该路径下的所有bmp文件
-	GetAllSubPath(filePath, path);
-	GetAllFormatFiles(path[1], files, "bmp");
+	//GetAllSubPath(filePath, path);
+	GetAllFormatFiles(filePath, files, "bmp");
 	int size = files.size();
-	
-	for (int i = 1; i < size; i++)
-	{
-		cout << files[i].c_str() << endl;
-	}
+	cout << files.size();
+	//
+	//for (int i = 1; i < size; i++)
+	//{
+	//	cout << files[i].c_str() << endl;
+	//}
 }
